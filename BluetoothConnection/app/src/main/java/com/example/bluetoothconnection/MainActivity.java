@@ -275,8 +275,8 @@ public class MainActivity extends AppCompatActivity  implements CompoundButton.O
             case R.id.toggleButton1:
                 if(isChecked){
                     if(myThreadConnected!=null) {
-                        byte[] bytesToSend = "1".getBytes();
-                        myThreadConnected.writeI(1);
+                        //byte[] bytesToSend = "1".getBytes();
+                        myThreadConnected.writeI(sb1.getProgress());
                     }
                     Toast.makeText(MainActivity.this, "POWER ON", Toast.LENGTH_SHORT).show();
                 }else{
